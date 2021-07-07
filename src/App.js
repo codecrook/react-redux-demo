@@ -1,8 +1,13 @@
 import './App.css';
+import CakeContainer from './components/CakeContainer';
 
 function App() {
   return (
-    <div>React Redux Demo</div>
+    <div className="App">
+      <h1>React Redux Demo</h1>
+
+      <CakeContainer />
+    </div>
   );
 }
 
