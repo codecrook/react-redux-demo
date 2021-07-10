@@ -4,17 +4,19 @@ import store from './redux/store';
 import CakeContainer from './components/CakeContainer';
 import IceCreamContainer from './components/IceCreamContainer';
 import ItemContainer from './components/ItemContainer';
+import UsersContainer from './components/UsersContainer';
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
         <h1>React Redux Demo</h1>
-
+        {/* 
         <CakeContainer />
-        <IceCreamContainer />
+        <IceCreamContainer /> */}
+        <UsersContainer />
 
-        <hr/>
+        <hr />
         <ItemContainer itemType="cake" />
         <ItemContainer itemType="icecream" />
       </div>
