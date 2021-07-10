@@ -6,7 +6,7 @@ const initialSate = {
 
 const cakeReducer = (state = initialSate, action) => {
     switch (action.type) {
-        case BUY_CAKE: return { ...state, numOfCakes: state.numOfCakes - 1 };
+        case BUY_CAKE: return { ...state, numOfCakes: state.numOfCakes - action.payload };
         default: return state;
     }
 };
